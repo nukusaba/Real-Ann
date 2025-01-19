@@ -1,0 +1,222 @@
+/****************************
+* "Custom Ann" by AsahiNyan *
+****************************/
+
+@define-color default-background #0f0f0f;
+@define-color alt-background #242424;
+@define-color last-split-bg #1d1d1d;
+@define-color default-text #ffffff;
+@define-color attempt-text #b0b0b0;
+@define-color last-split-fg #757575;
+@define-color time-text #dadada;
+@define-color behind-bg #ff9469;
+@define-color sob-bg #f6d949;
+@define-color sob-fg #ffecce;
+@define-color ahead-bg #95e85e;
+@define-color done-bg #62b0fa;
+@define-color wr-fg #d4ecff;
+@define-color losing-t #ff6c6c;
+@define-color losing-bg @losing-t;
+@define-color ahead-fg #95e85e;
+@define-color behind-fg #ff9469;
+@define-color losing-fg #ff6c6c;
+@define-color sob-fg #ffdc74;
+
+* { font-weight: 900; }
+
+scrollbar* { background-color: transparent; border: none; color: transparent; max-width: 0px; max-height: 0px; visibility: none; display: none; }
+
+.window, .header { background-color: @default-background; color: @default-text; }
+
+.title { color: @default-text; font-weight: 900; font-size: 16pt; }
+
+.attempt-count { color: @attempt-text; font-size: 12pt; font-weight: 700; padding-top: 6px; }
+
+.time { color: @time-text; }
+
+.time.behind, .time.best-segment, time.best-split, .time.losing { color: @default-color; }
+
+.timer { font-size: 24pt; font-family: Noto Sans Mono CJK JP; font-weight: 900; color: @ahead-bg; background-color: alpha(currentcolor,0.3); padding: 0px 10px 4px 30px; margin-bottom: 10px; margin-top: 9px; border-radius: 15px; transition: 0.7s background-color ease; }
+
+.timer .timer-millis { font-size: 17pt; background-color: transparent; padding-bottom: 3px; color: alpha(@ahead-bg,0.7); }
+
+.timer.behind .timer-millis { color: alpha(@behind-bg,0.7); }
+
+.timer.losing .timer-millis { color: alpha(@losing-bg,0.7); }
+
+.timer.delay .timer-millis { color: alpha(@done-bg,0.7); }
+
+.timer.behind, .timer.behind:backdrop { background-color: alpha(currentcolor,0.3); color: @behind-bg; transition: 0.7s background-color ease; margin-bottom: 10px; }
+
+.timer.losing, .timer.losing:backdrop { background-color: alpha(currentcolor,0.3); color: @losing-bg; transition: 0.7s background-color ease; margin-bottom: 10px; border-radius: 15px}
+
+.timer.delay, .timer.delay:backdrop, .timer.done, .timer.done:backdrop { background-color: alpha(currentcolor,0.3); color: @done-bg; transition: 0.7s background-color ease; margin-bottom: 10px; }
+
+.split { padding: 0px 10px 0px 10px; margin: 2px 0px 2px 0px; border-radius: 50px; min-height: 25px; background-color: transparent; transition: 0.5s all ease; }
+
+.split-title { font-weight: 700; }
+
+.split-icon { margin-top: 4px; margin-bottom: 4px; margin-right: 3px; border-radius: 100%; }
+
+.split-time { color: @time-text; font-weight: 500; }
+
+.split-last { font-weight: 900; background-color: @last-split-bg; color: @last-split-fg; border-radius: 50px; margin-bottom: 2px; margin-top: 2px; }
+
+.split-last .split-time { color: @last-split-fg; }
+
+.current-split { margin-left: 20px; margin-right: 04px; background-color: alpha(currentcolor,0.3); color: @done-bg; font-weight: 900; transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms, background-image 0ms, border 0ms; box-shadow: 0 0 0 3px alpha(currentcolor,0.3); }
+
+.current-split .split-time { color: alpha(@done-bg,0.8); font-weight: 700; }
+
+.split-delta { color: @ahead-bg; background-color: transparent; padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+
+.current-split .delta, .current-split .split-delta, .delta { color: @ahead-bg; background-color: alpha(currentcolor,0.3); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+
+.behind, .current-split .delta.behind { color: @behind-bg; background-color: alpha(currentcolor,0.3); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+
+.losing, .current-split .delta.losing { color: @losing-bg; background-color: alpha(currentcolor,0.3); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+
+.best-segment, .current-split .delta.best-segment { color: @sob-bg; background-color: alpha(currentcolor,0.3); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+
+box.footer { border-radius: 20px; background-color: @alt-background; font-weight: 700; }
+
+box.footer > .prev-segment-label, box.footer > .prev-segment { background-color: @alt-background; padding: 10px 10px 5px 10px; border-radius: 20px 20px 0px 0px; }
+
+box.footer > .sum-of-bests-label, box.footer > .sum-of-bests { background-color: @alt-background; padding: 5px 10px 5px 10px; border-radius: 0px; }
+
+box.footer > .personal-best-label, box.footer > .personal-best { background-color: @alt-background; padding: 5px 10px 10px 10px; border-radius: 0px 0px 20px 20px; }
+
+.window box.footer:nth-child(7) { background-color: transparent; }
+
+.prev-segment { color: @ahead-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+
+.prev-segment.behind { color: @behind-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+
+.prev-segment.losing { color: @losing-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+
+.prev-segment.best-segment { color: @sob-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+
+.sum-of-bests { color: @sob-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+
+.personal-best { color: @ahead-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+
+
+
+/* ██████  ██    ██ ███████ ████████  ██████  ███    ███     ███████ ██████  ██      ██ ████████      ██████  ██████  ██       ██████  ██████  ███████
+/* ██      ██    ██ ██         ██    ██    ██ ████  ████     ██      ██   ██ ██      ██    ██        ██      ██    ██ ██      ██    ██ ██   ██ ██
+/* ██      ██    ██ ███████    ██    ██    ██ ██ ████ ██     ███████ ██████  ██      ██    ██        ██      ██    ██ ██      ██    ██ ██████  ███████
+/* ██      ██    ██      ██    ██    ██    ██ ██  ██  ██          ██ ██      ██      ██    ██        ██      ██    ██ ██      ██    ██ ██   ██      ██
+/* ██████  ██████  ███████     ██     ██████  ██      ██     ███████ ██      ███████ ██    ██         ██████  ██████  ███████  ██████  ██   ██ ███████
+
+/*********
+*  SM64  *
+*********/
+/* "WF" & "WF (9)" */
+.split-title-wf.current-split,
+.split-title-wf--9-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wf.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-wf.current-split .split-time,
+.split-title-wf--9-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "BitDW (12)" & "BitDW" */
+.split-title-bitdw.current-split,
+.split-title-bitdw--12-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bitdw.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-bitdw.current-split .split-time,
+.split-title-bitdw--12-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "CCM" & "CCM (18)" */
+.split-title-ccm.current-split,
+.split-title-ccm--18-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ccm.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-ccm.current-split .split-time,
+.split-title-ccm--18-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "BBH" & "BBH (20)" */
+.split-title-bbh.current-split,
+.split-title-bbh--20-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bbh.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-bbh.current-split .split-time,
+.split-title-bbh--20-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "SSL" & "SSL 24" */
+.split-title-ssl.current-split,
+.split-title-ssl--24-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ssl.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-ssl.current-split .split-time,
+.split-title-ssl--24-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "LLL" & "LLL (30)" */
+.split-title-lll.current-split,
+.split-title-lll--30-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/lll.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-bbh.current-split .split-time,
+.split-title-bbh--30-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "HMC" & "HMC (36)" */
+.split-title-hmc.current-split,
+.split-title-hmc--36-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/hmc.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-hmc.current-split .split-time,
+.split-title-hmc--36-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "DDD" & "DDD (39)" */
+.split-title-ddd.current-split,
+.split-title-ddd--39-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ddd.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-ddd.current-split .split-time,
+.split-title-ddd--39-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "BitFS" & "BitFS (40)" */
+.split-title-bitfs.current-split,
+.split-title-bitfs--40-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bitfs.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-bitfs.current-split .split-time,
+.split-title-bitfs--40-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "WDW" & "WDW (45)" */
+.split-title-wdw.current-split,
+.split-title-wdw--45-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wdw.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-wdw.current-split .split-time,
+.split-title-wdw--45-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "THI" & "THI (48)" */
+.split-title-thi.current-split,
+.split-title-thi--48-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/thi.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-thi.current-split .split-time,
+.split-title-thi--48-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "TTM" & "TTM (54)" */
+.split-title-ttm.current-split,
+.split-title-ttm--54-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ttm.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-ttm.current-split .split-time,
+.split-title-ttm--54-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "SL" & "SL (59)" */
+.split-title-sl.current-split,
+.split-title-sl--59-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/sl.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-sl.current-split .split-time,
+.split-title-sl--59-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "RR" & "RR (63)" */
+.split-title-rr.current-split,
+.split-title-rr--63-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/rr.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-rr.current-split .split-time,
+.split-title-rr--63-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "TTC" & "TTC (70)" */
+.split-title-ttc.current-split,
+.split-title-ttc--70-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ttc.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-ttc.current-split .split-time,
+.split-title-ttc--70-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "BitS" */
+.split-title-bits.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bits.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-bits.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
