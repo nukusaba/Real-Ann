@@ -1,6 +1,6 @@
-/****************************
-* "Custom Ann" by AsahiNyan *
-****************************/
+/**************************
+* "Real Ann" by AsahiNyan *
+**************************/
 
 @define-color default-background #0f0f0f;
 @define-color alt-background #242424;
@@ -70,13 +70,13 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 
 .split-delta { color: @ahead-bg; background-color: transparent; padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
 
-.current-split .delta, .current-split .split-delta, .delta { color: @ahead-bg; background-color: alpha(currentcolor,0.3); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+.current-split .delta, .current-split .split-delta, .delta { color: @ahead-bg; background-color: alpha(@default-background,0.7); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
 
-.behind, .current-split .delta.behind { color: @behind-bg; background-color: alpha(currentcolor,0.3); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+.behind, .current-split .delta.behind { color: @behind-bg; background-color: alpha(@default-background,0.7); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
 
-.losing, .current-split .delta.losing { color: @losing-bg; background-color: alpha(currentcolor,0.3); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+.losing, .current-split .delta.losing { color: @losing-bg; background-color: alpha(@default-background,0.7); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
 
-.best-segment, .current-split .delta.best-segment { color: @sob-bg; background-color: alpha(currentcolor,0.3); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+.best-segment, .current-split .delta.best-segment { color: @sob-bg; background-color: alpha(@default-background,0.7); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
 
 box.footer { border-radius: 20px; background-color: @alt-background; font-weight: 700; }
 
@@ -150,8 +150,8 @@ box.footer > .personal-best-label, box.footer > .personal-best { background-colo
 .split-title-lll.current-split,
 .split-title-lll--30-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/lll.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
 
-.split-title-bbh.current-split .split-time,
-.split-title-bbh--30-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+.split-title-lll.current-split .split-time,
+.split-title-lll--30-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
 
 /* "HMC" & "HMC (36)" */
 .split-title-hmc.current-split,
