@@ -64,9 +64,9 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 
 .split-last .split-time { color: @last-split-fg; }
 
-.current-split { margin-left: 20px; margin-right: 04px; background-color: alpha(currentcolor,0.3); color: @done-bg; font-weight: 900; transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms, background-image 0ms, border 0ms; box-shadow: 0 0 0 3px alpha(currentcolor,0.3); }
+.current-split { margin-left: 20px; margin-right: 04px; background-color: alpha(currentcolor,0.3); color: @default-text; font-weight: 900; transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms, background-image 0ms, border 0ms; box-shadow: 0 0 0 3px alpha(currentcolor,0.3); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
 
-.current-split .split-time { color: alpha(@done-bg,0.8); font-weight: 700; }
+.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; font-weight: 700; }
 
 .split-delta { color: @ahead-bg; background-color: transparent; padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
 
@@ -111,151 +111,155 @@ box.footer > .personal-best-label, box.footer > .personal-best { background-colo
 /*********
 *  SM64  *
 *********/
-/* "WF" & "WF (9)" */
+/* WF */
 .split-title-wf.current-split,
-.split-title-wf--9-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wf.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-wf--9-.current-split,
+.split-title-wf--10-.current-split,
+.split-title-wf--6-.current-split,
+.split-title-wf--4-.current-split,
+.split-title-wf--26-.current-split,
+.split-title-wf--8-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wf.png"); }
 
-.split-title-wf.current-split .split-time,
-.split-title-wf--9-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "BitDW (12)" & "BitDW" */
+/* BitDW */
 .split-title-bitdw.current-split,
-.split-title-bitdw--12-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bitdw.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-bitdw--12-.current-split,
+.split-title-bitdw--13-.current-split,
+.split-title-bitdw--9-.current-split,
+.split-title-bitdw--1-.current-split,
+.split-title-bowser-1.current-split,
+.split-title-bitdw--12-.current-split,
+.split-title-dw--1-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bitdw.png"); }
 
-.split-title-bitdw.current-split .split-time,
-.split-title-bitdw--12-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "CCM" & "CCM (18)" */
+/* CCM */
 .split-title-ccm.current-split,
-.split-title-ccm--18-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ccm.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-ccm--18-.current-split,
+.split-title-ccm--17-.current-split,
+.split-title-ccm--8-.current-split,
+.split-title-ccm--59-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ccm.png"); }
 
-.split-title-ccm.current-split .split-time,
-.split-title-ccm--18-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "BBH" & "BBH (20)" */
+/* BBH */
 .split-title-bbh.current-split,
-.split-title-bbh--20-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bbh.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-bbh--20-.current-split,
+.split-title-bbh--19-.current-split,
+.split-title-bbh--66-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bbh.png"); }
 
-.split-title-bbh.current-split .split-time,
-.split-title-bbh--20-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "SSL" & "SSL 24" */
+/* SSL */
 .split-title-ssl.current-split,
-.split-title-ssl--24-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ssl.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-ssl--24-.current-split,
+.split-title-ssl--10-.current-split,
+.split-title-ssl--11-.current-split,
+.split-title-ssl--7-.current-split,
+.split-title-ssl--34-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ssl.png"); }
 
-.split-title-ssl.current-split .split-time,
-.split-title-ssl--24-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "LLL" & "LLL (30)" */
+/* LLL */
 .split-title-lll.current-split,
-.split-title-lll--30-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/lll.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-lll--30-.current-split,
+.split-title-lll--11-.current-split,
+.split-title-lll--12-.current-split,
+.split-title-lll--50-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/lll.png"); }
 
-.split-title-lll.current-split .split-time,
-.split-title-lll--30-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "HMC" & "HMC (36)" */
+/* HMC */
 .split-title-hmc.current-split,
-.split-title-hmc--36-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/hmc.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-hmc--36-.current-split,
+.split-title-hmc--15-.current-split,
+.split-title-hmc--58-.current-split,
+.split-title-hmc100--36-.current-split,
+.split-title-hmc-100--36-.current-split,
+.split-title-hmc--42-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/hmc.png"); }
 
-.split-title-hmc.current-split .split-time,
-.split-title-hmc--36-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "DDD" & "DDD (39)" */
+/* DDD */
 .split-title-ddd.current-split,
 .split-title-ddd-100.current-split,
-.split-title-ddd--39-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ddd.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-ddd-100--68-.current-split,
+.split-title-ddd100--68-.current-split,
+.split-title-ddd--39-.current-split,
+.split-title-ddd--33-.current-split,
+.split-title-ddd--16-.current-split,
+.split-title-ddd--1-.current-split,
+.split-title-ddd--74-.current-split,
+.split-title-ddd--73-.current-split,
+.split-title-upstairs--74-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ddd.png"); }
 
-.split-title-ddd.current-split .split-time,
-.split-title-ddd-100.current-split .split-time,
-.split-title-ddd--39-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "BitFS" & "BitFS (40)" */
+/* BitFS */
 .split-title-bitfs.current-split,
-.split-title-bitfs--40-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bitfs.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-bitfs--40-.current-split,
+.split-title-bitfs--34-.current-split,
+.split-title-bitfs--71-.current-split,
+.split-title-bitfs--74-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bitfs.png"); }
 
-.split-title-bitfs.current-split .split-time,
-.split-title-bitfs--40-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "WDW" & "WDW (45)" */
+/* WDW */
 .split-title-wdw.current-split,
-.split-title-wdw--45-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wdw.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-wdw--45-.current-split,
+.split-title-wdw--39-.current-split,
+.split-title-wdw--81-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wdw.png"); }
 
-.split-title-wdw.current-split .split-time,
-.split-title-wdw--45-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "THI" & "THI (48)" */
+/* THI */
 .split-title-thi.current-split,
-.split-title-thi--48-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/thi.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-thi--48-.current-split,
+.split-title-thi--42-.current-split,
+.split-title-thi--88-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/thi.png"); }
 
-.split-title-thi.current-split .split-time,
-.split-title-thi--48-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "TTM" & "TTM (54)" */
+/* TTM */
 .split-title-ttm.current-split,
-.split-title-ttm--54-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ttm.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-ttm--54-.current-split,
+.split-title-ttm--48-.current-split,
+.split-title-ttm--96-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ttm.png"); }
 
-.split-title-ttm.current-split .split-time,
-.split-title-ttm--54-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "SL" & "SL (59)" */
+/* SL */
 .split-title-sl.current-split,
-.split-title-sl--59-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/sl.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-sl--59-.current-split,
+.split-title-sl--52-.current-split,
+.split-title-sl--103-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/sl.png"); }
 
-.split-title-sl.current-split .split-time,
-.split-title-sl--59-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "RR" & "RR (63)" */
+/* RR */
 .split-title-rr.current-split,
-.split-title-rr--63-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/rr.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-rr--63-.current-split,
+.split-title-rr--62-.current-split,
+.split-title-rr--119-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/rr.png"); }
 
-.split-title-rr.current-split .split-time,
-.split-title-rr--63-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "TTC" & "TTC (70)" */
+/* TTC */
 .split-title-ttc.current-split,
-.split-title-ttc--70-.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ttc.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.split-title-ttc--70-.current-split,
+.split-title-ttc--69-.current-split,
+.split-title-ttc--111-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ttc.png"); }
 
-.split-title-ttc.current-split .split-time,
-.split-title-ttc--70-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+/* BitS */
+.split-title-bits.current-split,
+.split-title-bits--120-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bits.png"); }
 
-/* "BitS" */
-.split-title-bits.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bits.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+/* JRB */
+.split-title-jrb.current-split,
+.split-title-jrb--16-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/jrb.png"); }
 
-.split-title-bits.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+/* VC */
+.split-title-vc.current-split,
+.split-title-vc--52-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/vc.png"); }
 
-/* "JRB" */
-.split-title-jrb.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/jrb.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+/* WMOTR */
+.split-title-wmotr.current-split,
+.split-title-cloud--104-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wmotr.png"); }
 
-.split-title-jrb.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+/* BOB */
+.split-title-bob.current-split,
+.split-title-bob--26-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bob.png"); }
 
-/* "VC" */
-.split-title-vc.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/vc.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+/* LBLJ */
+.split-title-lblj.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/lblj.png"); }
 
-.split-title-vc.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+/* SBLJ */
+.split-title-sblj.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/sblj.png"); }
 
+/* BLJ */
+.split-title-blj.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/blj.png"); }
 
-/* "WMOTR" */
-.split-title-wmotr.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wmotr.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+/* WC */
+.split-title-wc.current-split,
+.split-title-wc--12-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wc.png"); }
 
-.split-title-wmotr.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+/* PSS */
+.split-title-pss.current-split,
+.split-title-pss--3-.current-split,
+.split-title-pss--19-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/pss.png"); }
 
-/* "BOB" */
-.split-title-bob.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bob.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
-
-.split-title-bob.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "LBLJ" */
-.split-title-lblj.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/lblj.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
-
-.split-title-lblj.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "SBLJ" */
-.split-title-sblj.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/sblj.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
-
-.split-title-sblj.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
-/* "BLJ" */
-.split-title-blj.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/blj.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
-
-.split-title-blj.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
-
+/* Mips */
+.split-title-mips.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/mips.png"); }
