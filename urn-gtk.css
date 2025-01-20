@@ -244,4 +244,18 @@ box.footer > .personal-best-label, box.footer > .personal-best { background-colo
 
 .split-title-bob.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
 
+/* "LBLJ" */
+.split-title-lblj.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/lblj.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-lblj.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "SBLJ" */
+.split-title-sblj.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/sblj.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-sblj.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
+
+/* "BLJ" */
+.split-title-blj.current-split { color: #ffffff; background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/blj.png"); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+
+.split-title-blj.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; }
 
