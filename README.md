@@ -1,17 +1,18 @@
 # Real Ann
 A theme for the [Urn speedrun spliter](https://github.com/paoloose/urn) that uses images for split backgrounds based on the splits name.
 
+![](assets/example.png)
+
 ---
-# Current progress
-Currently `Real Ann` supports very little, and is more of a demo concept. 
-However i plan on getting some of the popular speedrun games in there, and some not so popular ones too.
 
 ## What it supports
 - Most SM64 level shortenings without star count in split name.
-- SM64 70 star with star count in split name with one specific route.
+- SM64 70 star intermediate route with star count in split name.
+- Every SM64 Main category's WR route with star count in split name.
+- Some extra split names for SM64 for slightly diffrent routes.
+- Some alternative nameing in SM64 such as "Bowser 1" or "DW" for "BitDW"
 
 ## What is planed to be supported
-- Every SM64 Run with various amounts of stars in split's names.
 - Every Level in the game "Lemmings" with level names as split names.
 - Some one-off things for games i personaly enjoy running or watching.
 
