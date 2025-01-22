@@ -36,7 +36,7 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 
 .time.behind, .time.best-segment, time.best-split, .time.losing { color: @default-color; }
 
-.timer { font-size: 24pt; font-family: Noto Sans Mono CJK JP; font-weight: 900; color: @ahead-bg; background-color: alpha(currentcolor,0.3); padding: 0px 10px 4px 30px; margin-bottom: 10px; margin-top: 9px; border-radius: 15px; transition: 0.7s background-color ease; }
+.timer { font-size: 24pt; font-family: Noto Sans Mono CJK JP; font-weight: 900; color: @ahead-bg; background-color: alpha(currentcolor,0.15); padding: 0px 10px 4px 30px; margin-bottom: 10px; margin-top: 9px; border-radius: 15px; transition: 0.7s background-color ease; }
 
 .timer .timer-millis { font-size: 17pt; background-color: transparent; padding-bottom: 3px; color: alpha(@ahead-bg,0.7); }
 
@@ -46,11 +46,11 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 
 .timer.delay .timer-millis { color: alpha(@done-bg,0.7); }
 
-.timer.behind, .timer.behind:backdrop { background-color: alpha(currentcolor,0.3); color: @behind-bg; transition: 0.7s background-color ease; margin-bottom: 10px; }
+.timer.behind, .timer.behind:backdrop { background-color: alpha(currentcolor,0.15); color: @behind-bg; transition: 0.7s background-color ease; margin-bottom: 10px; }
 
-.timer.losing, .timer.losing:backdrop { background-color: alpha(currentcolor,0.3); color: @losing-bg; transition: 0.7s background-color ease; margin-bottom: 10px; border-radius: 15px}
+.timer.losing, .timer.losing:backdrop { background-color: alpha(currentcolor,0.15); color: @losing-bg; transition: 0.7s background-color ease; margin-bottom: 10px; border-radius: 15px}
 
-.timer.delay, .timer.delay:backdrop, .timer.done, .timer.done:backdrop { background-color: alpha(currentcolor,0.3); color: @done-bg; transition: 0.7s background-color ease; margin-bottom: 10px; }
+.timer.delay, .timer.delay:backdrop, .timer.done, .timer.done:backdrop { background-color: alpha(currentcolor,0.15); color: @done-bg; transition: 0.7s background-color ease; margin-bottom: 10px; }
 
 .split { padding: 0px 10px 0px 10px; margin: 2px 0px 2px 0px; border-radius: 50px; min-height: 25px; background-color: transparent; transition: 0.5s all ease; }
 
@@ -64,19 +64,19 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 
 .split-last .split-time { color: @last-split-fg; }
 
-.current-split { margin-left: 20px; margin-right: 04px; background-color: alpha(currentcolor,0.3); color: @default-text; font-weight: 900; transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms, background-image 0ms, border 0ms; box-shadow: 0 0 0 3px alpha(currentcolor,0.3); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
+.current-split { margin-left: 20px; margin-right: 04px; background-color: alpha(currentcolor,0.2); color: @default-text; font-weight: 900; transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms, background-image 0ms, border 0ms; box-shadow: 0 0 0 3px alpha(currentcolor,0.3); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; }
 
 .current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; font-weight: 700; }
 
 .split-delta { color: @ahead-bg; background-color: transparent; padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
 
-.current-split .delta, .current-split .split-delta, .delta { color: @ahead-bg; background-color: alpha(@default-background,0.7); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+.current-split .delta, .current-split .split-delta, .delta { color: @ahead-bg; background-color: alpha(@default-background,0.4); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
 
-.behind, .current-split .delta.behind { color: @behind-bg; background-color: alpha(@default-background,0.7); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+.behind, .current-split .delta.behind { color: @behind-bg; background-color: alpha(@default-background,0.4); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
 
-.losing, .current-split .delta.losing { color: @losing-bg; background-color: alpha(@default-background,0.7); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+.losing, .current-split .delta.losing { color: @losing-bg; background-color: alpha(@default-background,0.4); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
 
-.best-segment, .current-split .delta.best-segment { color: @sob-bg; background-color: alpha(@default-background,0.7); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
+.best-segment, .current-split .delta.best-segment { color: @sob-bg; background-color: alpha(@default-background,0.4); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
 
 box.footer { border-radius: 20px; background-color: @alt-background; font-weight: 700; }
 
@@ -102,11 +102,11 @@ box.footer > .personal-best-label, box.footer > .personal-best { background-colo
 
 
 
-/* ██████  ██    ██ ███████ ████████  ██████  ███    ███     ███████ ██████  ██      ██ ████████      ██████  ██████  ██       ██████  ██████  ███████
-/* ██      ██    ██ ██         ██    ██    ██ ████  ████     ██      ██   ██ ██      ██    ██        ██      ██    ██ ██      ██    ██ ██   ██ ██
-/* ██      ██    ██ ███████    ██    ██    ██ ██ ████ ██     ███████ ██████  ██      ██    ██        ██      ██    ██ ██      ██    ██ ██████  ███████
-/* ██      ██    ██      ██    ██    ██    ██ ██  ██  ██          ██ ██      ██      ██    ██        ██      ██    ██ ██      ██    ██ ██   ██      ██
-/* ██████  ██████  ███████     ██     ██████  ██      ██     ███████ ██      ███████ ██    ██         ██████  ██████  ███████  ██████  ██   ██ ███████
+/* ██████  ██    ██ ███████ ████████  ██████  ███    ███     ███████ ██████  ██      ██ ████████
+/* ██      ██    ██ ██         ██    ██    ██ ████  ████     ██      ██   ██ ██      ██    ██
+/* ██      ██    ██ ███████    ██    ██    ██ ██ ████ ██     ███████ ██████  ██      ██    ██
+/* ██      ██    ██      ██    ██    ██    ██ ██  ██  ██          ██ ██      ██      ██    ██
+/* ██████   ██████  ███████    ██     ██████  ██      ██     ███████ ██      ███████ ██    ██
 
 /*********
 *  SM64  *
@@ -118,7 +118,7 @@ box.footer > .personal-best-label, box.footer > .personal-best { background-colo
 .split-title-wf--6-.current-split,
 .split-title-wf--4-.current-split,
 .split-title-wf--26-.current-split,
-.split-title-wf--8-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wf.png"); }
+.split-title-wf--8-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/wf.png"); }
 
 /* BitDW */
 .split-title-bitdw.current-split,
@@ -128,20 +128,20 @@ box.footer > .personal-best-label, box.footer > .personal-best { background-colo
 .split-title-bitdw--1-.current-split,
 .split-title-bowser-1.current-split,
 .split-title-bitdw--12-.current-split,
-.split-title-dw--1-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bitdw.png"); }
+.split-title-dw--1-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/bitdw.png"); }
 
 /* CCM */
 .split-title-ccm.current-split,
 .split-title-ccm--18-.current-split,
 .split-title-ccm--17-.current-split,
 .split-title-ccm--8-.current-split,
-.split-title-ccm--59-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ccm.png"); }
+.split-title-ccm--59-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/ccm.png"); }
 
 /* BBH */
 .split-title-bbh.current-split,
 .split-title-bbh--20-.current-split,
 .split-title-bbh--19-.current-split,
-.split-title-bbh--66-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bbh.png"); }
+.split-title-bbh--66-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/bbh.png"); }
 
 /* SSL */
 .split-title-ssl.current-split,
@@ -149,14 +149,14 @@ box.footer > .personal-best-label, box.footer > .personal-best { background-colo
 .split-title-ssl--10-.current-split,
 .split-title-ssl--11-.current-split,
 .split-title-ssl--7-.current-split,
-.split-title-ssl--34-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ssl.png"); }
+.split-title-ssl--34-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/ssl.png"); }
 
 /* LLL */
 .split-title-lll.current-split,
 .split-title-lll--30-.current-split,
 .split-title-lll--11-.current-split,
 .split-title-lll--12-.current-split,
-.split-title-lll--50-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/lll.png"); }
+.split-title-lll--50-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/lll.png"); }
 
 /* HMC */
 .split-title-hmc.current-split,
@@ -165,7 +165,7 @@ box.footer > .personal-best-label, box.footer > .personal-best { background-colo
 .split-title-hmc--58-.current-split,
 .split-title-hmc100--36-.current-split,
 .split-title-hmc-100--36-.current-split,
-.split-title-hmc--42-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/hmc.png"); }
+.split-title-hmc--42-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/hmc.png"); }
 
 /* DDD */
 .split-title-ddd.current-split,
@@ -178,88 +178,180 @@ box.footer > .personal-best-label, box.footer > .personal-best { background-colo
 .split-title-ddd--1-.current-split,
 .split-title-ddd--74-.current-split,
 .split-title-ddd--73-.current-split,
-.split-title-upstairs--74-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ddd.png"); }
+.split-title-upstairs--74-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/ddd.png"); }
 
 /* BitFS */
 .split-title-bitfs.current-split,
 .split-title-bitfs--40-.current-split,
 .split-title-bitfs--34-.current-split,
 .split-title-bitfs--71-.current-split,
-.split-title-bitfs--74-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bitfs.png"); }
+.split-title-bitfs--74-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/bitfs.png"); }
 
 /* WDW */
 .split-title-wdw.current-split,
 .split-title-wdw--45-.current-split,
 .split-title-wdw--39-.current-split,
-.split-title-wdw--81-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wdw.png"); }
+.split-title-wdw--81-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/wdw.png"); }
 
 /* THI */
 .split-title-thi.current-split,
 .split-title-thi--48-.current-split,
 .split-title-thi--42-.current-split,
-.split-title-thi--88-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/thi.png"); }
+.split-title-thi--88-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/thi.png"); }
 
 /* TTM */
 .split-title-ttm.current-split,
 .split-title-ttm--54-.current-split,
 .split-title-ttm--48-.current-split,
-.split-title-ttm--96-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ttm.png"); }
+.split-title-ttm--96-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/ttm.png"); }
 
 /* SL */
 .split-title-sl.current-split,
 .split-title-sl--59-.current-split,
 .split-title-sl--52-.current-split,
-.split-title-sl--103-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/sl.png"); }
+.split-title-sl--103-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/sl.png"); }
 
 /* RR */
 .split-title-rr.current-split,
 .split-title-rr--63-.current-split,
 .split-title-rr--62-.current-split,
-.split-title-rr--119-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/rr.png"); }
+.split-title-rr--119-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/rr.png"); }
 
 /* TTC */
 .split-title-ttc.current-split,
 .split-title-ttc--70-.current-split,
 .split-title-ttc--69-.current-split,
-.split-title-ttc--111-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/ttc.png"); }
+.split-title-ttc--111-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/ttc.png"); }
 
 /* BitS */
 .split-title-bits.current-split,
-.split-title-bits--120-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bits.png"); }
+.split-title-bits--120-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/bits.png"); }
 
 /* JRB */
 .split-title-jrb.current-split,
-.split-title-jrb--16-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/jrb.png"); }
+.split-title-jrb--16-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/jrb.png"); }
 
 /* VC */
 .split-title-vc.current-split,
-.split-title-vc--52-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/vc.png"); }
+.split-title-vc--52-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/vc.png"); }
 
 /* WMOTR */
 .split-title-wmotr.current-split,
-.split-title-cloud--104-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wmotr.png"); }
+.split-title-cloud--104-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/wmotr.png"); }
 
 /* BOB */
 .split-title-bob.current-split,
-.split-title-bob--26-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/bob.png"); }
+.split-title-bob--26-.current-split,
+.split-title-bob--1-.current-split,
+.split-title-bob--2-.current-split,
+.split-title-bob2--13-.current-split,
+.split-title-bob-2--13-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/bob.png"); }
 
 /* LBLJ */
-.split-title-lblj.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/lblj.png"); }
+.split-title-lblj.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/lblj.png"); }
 
 /* SBLJ */
-.split-title-sblj.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/sblj.png"); }
+.split-title-sblj.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/sblj.png"); }
 
 /* BLJ */
-.split-title-blj.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/blj.png"); }
+.split-title-blj.current-split,
+.split-title-blj--16-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/blj.png"); }
 
 /* WC */
 .split-title-wc.current-split,
-.split-title-wc--12-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/wc.png"); }
+.split-title-wc--12-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/wc.png"); }
 
 /* PSS */
 .split-title-pss.current-split,
 .split-title-pss--3-.current-split,
-.split-title-pss--19-.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/pss.png"); }
+.split-title-pss--19-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/pss.png"); }
 
 /* Mips */
-.split-title-mips.current-split { background-image: url("https://raw.githubusercontent.com/AsahiNyan/real-ann_urn-theme/refs/heads/main/sm64/mips.png"); }
+.split-title-mips.current-split,
+.split-title-mips--15-.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/sm64/mips.png"); }
+
+
+/*************
+*  LEMMINGS  *
+*************/
+/* F1 / TR15 */
+.split-title-f1.current-split,
+.split-title-f1-10-.current-split,
+.split-title-f1--10--.current-split,
+.split-title-just-dig-.current-split,
+.split-title-just-dig--10-.current-split,
+.split-title-just-dig---10--.current-split,
+.split-title-tr15.current-split,
+.split-title-tr15-60-.current-split,
+.split-title-tr15--60--.current-split,
+.split-title-ozone-friendly-lemmings.current-split,
+.split-title-ozone-friendly-lemmings-60-.current-split,
+.split-title-ozone-friendly-lemmings--60--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/f1-tr15.png"); }
+
+/* F2 / TR18 */
+.split-title-f2.current-split,
+.split-title-f2-10-.current-split,
+.split-title-f2--10--.current-split,
+.split-title-only-floaters-can-survive-this.current-split,
+.split-title-only-floaters-can-survive-this-10-.current-split,
+.split-title-only-floaters-can-survive-this--10--.current-split,
+.split-title-tr18.current-split,
+.split-title-tr18-90-.current-split,
+.split-title-tr18--90--.current-split,
+.split-title-it-s-lemmingentry-watson.current-split,
+.split-title-it-s-lemmingentry-watson-90-.current-split,
+.split-title-it-s-lemmingentry-watson--90--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/f2-tr18.png"); }
+
+/* F3 */
+.split-title-f3.current-split,
+.split-title-f3-10-.current-split,
+.split-title-f3--10--.current-split,
+.split-title-tailor-made-for-blockers.current-split,
+.split-title-tailor-made-for-blockers-10-.current-split,
+.split-title-tailor-made-for-blockers--10--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/f3.png"); }
+
+/* F4 / M20 */
+.split-title-f4.current-split,
+.split-title-f4-100-.current-split,
+.split-title-f4--100--.current-split,
+.split-title-now-use-miners-and-climbers.current-split,
+.split-title-now-use-miners-and-climbers-100-.current-split,
+.split-title-now-use-miners-and-climbers--100--.current-split,
+.split-title-m20.current-split,
+.split-title-m20-100-.current-split,
+.split-title-m20--100--.current-split,
+.split-title-no-added-colours-or-lemmings.current-split,
+.split-title-no-added-colours-or-lemmings-100-.current-split,
+.split-title-no-added-colours-or-lemmings--100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/f4-m20.png"); }
+
+/* F5 / TR16 */
+.split-title-f5.current-split,
+.split-title-f5-10-.current-split,
+.split-title-f5--10--.current-split,
+.split-title-you-need-bashers-this-time.current-split,
+.split-title-you-need-bashers-this-time-10-.current-split,
+.split-title-you-need-bashers-this-time--10--.current-split,
+.split-title-tr16.current-split,
+.split-title-tr16-80-.current-split,
+.split-title-tr16--80--.current-split,
+.split-title-luvly-jubly.current-split,
+.split-title-luvly-jubly-80-.current-split,
+.split-title-luvly-jubly-80--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/f5-tr16.png"); }
+
+/* F6 / TR17 */
+.split-title-f6.current-split,
+.split-title-f6-20-.current-split,
+.split-title-f6--20--.current-split,
+.split-title-a-task-for-blockers-and-bombers.current-split,
+.split-title-a-task-for-blockers-and-bombers-20-.current-split,
+.split-title-a-task-for-blockers-and-bombers--20--.current-split,
+.split-title-tr16.current-split,
+.split-title-tr16-48-.current-split,
+.split-title-tr16--48--.current-split,
+.split-title-diet-lemmingaid.current-split,
+.split-title-diet-lemmingaid-48-.current-split,
+.split-title-diet-lemmingaid--48--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/f6-tr17.png"); }
+
+
+
+
