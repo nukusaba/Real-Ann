@@ -33,5 +33,6 @@ make && sudo make install
 #### **Optional** 
 3. For the best experience i recommend installing the [awd-gtk3-dark theme](https://github.com/lassekongo83/adw-gtk3) and use the provided `.desktop` file to force Urn to use it.
 
+---
 
 **Note:** Images are pulled as raw links from this Git repo over internet. Manual download of the images is not needed. This Also means that a internet connection is required for this theme to work, the reason this is done is because a local version of this theme would not be easy to achive due to the need for absolute links, and i do not want people to install this in root.
