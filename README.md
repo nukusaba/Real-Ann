@@ -30,7 +30,7 @@ If the split name doesnt have a image assigned to it, it will default to a round
 make && sudo make install
 ```
 
-**Optional**
+#### **Optional** 
 3. For the best experience i recommend installing the [awd-gtk3-dark theme](https://github.com/lassekongo83/adw-gtk3) and use the provided `.desktop` file to force Urn to use it.
 
 
