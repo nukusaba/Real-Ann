@@ -1,7 +1,7 @@
 # Real Ann
 A theme for the [Urn speedrun spliter](https://github.com/paoloose/urn) that uses images for split backgrounds based on the splits name.
 
-![](assets/example.png)
+![](assets/example.png) 
 
 ---
 
