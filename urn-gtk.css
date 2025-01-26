@@ -343,12 +343,12 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 .split-title-a-task-for-blockers-and-bombers.current-split,
 .split-title-a-task-for-blockers-and-bombers-20-.current-split,
 .split-title-a-task-for-blockers-and-bombers--20--.current-split,
-.split-title-tr16.current-split,
-.split-title-tr16-48-.current-split,
-.split-title-tr16--48--.current-split,
+.split-title-tr17.current-split,
+.split-title-tr17-96-.current-split,
+.split-title-tr17--96--.current-split,
 .split-title-diet-lemmingaid.current-split,
-.split-title-diet-lemmingaid-48-.current-split,
-.split-title-diet-lemmingaid--48--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/f6-tr17.png"); }
+.split-title-diet-lemmingaid-96-.current-split,
+.split-title-diet-lemmingaid--96--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/f6-tr17.png"); }
 
 /* F7 / TR19 */
 .split-title-f7.current-split,
