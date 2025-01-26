@@ -66,7 +66,7 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 
 .current-split { margin-left: 20px; margin-right: 06px; background-color: alpha(currentcolor,0.2); color: @default-text; font-weight: 900; transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 0ms, background-image 0ms, border 0ms; box-shadow: 0 0 0 3px alpha(currentcolor,0.3); background-size: 100%; text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; box-shadow: none; border-radius: 10px; box-shadow: 0 0 0 2px alpha(@cs-border,0.3) }
 
-.current-split .split-time { color: alpha(#ffffff,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; font-weight: 800; }
+.current-split .split-time { color: alpha(@default-text,0.8); text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; font-weight: 800; }
 
 .split-delta { color: @ahead-bg; background-color: transparent; padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; max-width: 60px; min-width: 60px; }
 
@@ -682,3 +682,229 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 .split-title-all-or-nothing.current-split,
 .split-title-all-or-nothing-100-.current-split,
 .split-title-all-or-nothing--100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/f30-m24.png"); }
+
+/* TR1 */
+.split-title-tr1.current-split,
+.split-title-tr1-50-.current-split,
+.split-title-tr1--50--.current-split,
+.split-title-this-should-be-a-doddle-.current-split,
+.split-title-this-should-be-a-doddle--50-.current-split,
+.split-title-this-should-be-a-doddle---50--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr1.png"); }
+
+/* TR3 / TX29 */
+.split-title-tr3.current-split,
+.split-title-tr3-50-.current-split,
+.split-title-tr3--50--.current-split,
+.split-title-a-ladder-would-be-handy.current-split,
+.split-title-a-ladder-would-be-handy-50-.current-split,
+.split-title-a-ladder-would-be-handy--50--.current-split,
+.split-title-tx29.current-split,
+.split-title-tx29-95-.current-split,
+.split-title-tx29--95--.current-split,
+.split-title-how-do-i-dig-up-the-way-.current-split,
+.split-title-how-do-i-dig-up-the-way--95-.current-split,
+.split-title-how-do-i-dig-up-the-way---95--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr3-tx29.png"); }
+
+/* TR4 / TX */
+.split-title-tr4.current-split,
+.split-title-tr4-20-.current-split,
+.split-title-tr4--20--.current-split,
+.split-title-here-s-one-i-prepared-earlier.current-split,
+.split-title-here-s-one-i-prepared-earlier-20-.current-split,
+.split-title-here-s-one-i-prepared-earlier--20--.current-split,
+.split-title-tx7.current-split,
+.split-title-tx7-98-.current-split,
+.split-title-tx7--98--.current-split,
+.split-title-every-lemming-for-himself---.current-split,
+.split-title-every-lemming-for-himself-----98-.current-split,
+.split-title-every-lemming-for-himself------98--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr4-tx7.png"); }
+
+/* TR5 / TX8 */
+.split-title-tr5.current-split,
+.split-title-tr5-20-.current-split,
+.split-title-tr5--20--.current-split,
+.split-title-careless-clicking-costs-lives.current-split,
+.split-title-careless-clicking-costs-lives-20-.current-split,
+.split-title-careless-clicking-costs-lives--20--.current-split,
+.split-title-tx8.current-split,
+.split-title-tx8-100-.current-split,
+.split-title-tx8--100--.current-split,
+.split-title-the-art-gallery.current-split,
+.split-title-the-art-gallery-100-.current-split,
+.split-title-the-art-gallery--100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr5-tx8.png"); }
+
+/* TR6 / TX10 */
+.split-title-tr6.current-split,
+.split-title-tr6-80-.current-split,
+.split-title-tr6--80--.current-split,
+.split-title-lemmingology.current-split,
+.split-title-lemmingology-80-.current-split,
+.split-title-lemmingology--80--.current-split,
+.split-title-tx8.current-split,
+.split-title-tx8-100-.current-split,
+.split-title-tx8--100--.current-split,
+.split-title-izzie-wizzie-lemmings-get-busy.current-split,
+.split-title-izzie-wizzie-lemmings-get-busy-100-.current-split,
+.split-title-izzie-wizzie-lemmings-get-busy--100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr6-tx10.png"); }
+
+/* TR7 / TX11 */
+.split-title-tr7.current-split,
+.split-title-tr7-73-.current-split,
+.split-title-tr7--73--.current-split,
+.split-title-been-there--seen-it--done-it.current-split,
+.split-title-been-there--seen-it--done-it-73-.current-split,
+.split-title-been-there--seen-it--done-it--73--.current-split,
+.split-title-tx11.current-split,
+.split-title-tx11-100-.current-split,
+.split-title-tx11--100--.current-split,
+.split-title-the-ascending-pillar-scenario.current-split,
+.split-title-the-ascending-pillar-scenario-100-.current-split,
+.split-title-the-ascending-pillar-scenario--100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr7-tx11.png"); }
+
+/* TR8 / TX23 */
+.split-title-tr8.current-split,
+.split-title-tr8-60-.current-split,
+.split-title-tr8--60--.current-split,
+.split-title-lemming-sanctuary-in-sight.current-split,
+.split-title-lemming-sanctuary-in-sight-60-.current-split,
+.split-title-lemming-sanctuary-in-sight--60--.current-split,
+.split-title-tx23.current-split,
+.split-title-tx23-95-.current-split,
+.split-title-tx23--95--.current-split,
+.split-title-king-of-the-castle.current-split,
+.split-title-king-of-the-castle-95-.current-split,
+.split-title-king-of-the-castle--95--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr8-tx23.png"); }
+
+/* TR9 / M6 */
+.split-title-tr9.current-split,
+.split-title-tr9-93-.current-split,
+.split-title-tr9--93--.current-split,
+.split-title-they-just-keep-on-coming.current-split,
+.split-title-they-just-keep-on-coming-93-.current-split,
+.split-title-they-just-keep-on-coming--93--.current-split,
+.split-title-m6.current-split,
+.split-title-m6-100-.current-split,
+.split-title-m6--100--.current-split,
+.split-title-one-way-or-another.current-split,
+.split-title-one-way-or-another-100-.current-split,
+.split-title-one-way-or-another--100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr9-m6.png"); }
+
+/* TR10 / M15 */
+.split-title-tr10.current-split,
+.split-title-tr10-94-.current-split,
+.split-title-tr10--94--.current-split,
+.split-title-there-s-a-lot-of-them-about.current-split,
+.split-title-there-s-a-lot-of-them-about-94-.current-split,
+.split-title-there-s-a-lot-of-them-about--94--.current-split,
+.split-title-m15.current-split,
+.split-title-m15-96-.current-split,
+.split-title-m15--96--.current-split,
+.split-title-the-fast-food-kitchen---.current-split,
+.split-title-the-fast-food-kitchen----96-.current-split,
+.split-title-the-fast-food-kitchen-----96--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr10-m15.png"); }
+
+/* TR11 / M19 */
+.split-title-tr11.current-split,
+.split-title-tr11-84-.current-split,
+.split-title-tr11--84--.current-split,
+.split-title-lemmings-in-the-attic.current-split,
+.split-title-lemmings-in-the-attic-84-.current-split,
+.split-title-lemmings-in-the-attic--84--.current-split,
+.split-title-m19.current-split,
+.split-title-m19-96-.current-split,
+.split-title-m19--96--.current-split,
+.split-title-time-to-get-up-.current-split,
+.split-title-time-to-get-up--92-.current-split,
+.split-title-time-to-get-up---92--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr11-m19.png"); }
+
+/* TR12 / M21 */
+.split-title-tr12.current-split,
+.split-title-tr12-80-.current-split,
+.split-title-tr12--80--.current-split,
+.split-title-bitter-lemming.current-split,
+.split-title-bitter-lemming-80-.current-split,
+.split-title-bitter-lemming--80--.current-split,
+.split-title-m21.current-split,
+.split-title-m21-100-.current-split,
+.split-title-m21--100--.current-split,
+.split-title-with-a-twist-of-lemming-please.current-split,
+.split-title-with-a-twist-of-lemming-please-100-.current-split,
+.split-title-with-a-twist-of-lemming-please--100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr12-m21.png"); }
+
+/* TR13 / M25 */
+.split-title-tr13.current-split,
+.split-title-tr13-70-.current-split,
+.split-title-tr13--70--.current-split,
+.split-title-lemming-drops.current-split,
+.split-title-lemming-drops-70-.current-split,
+.split-title-lemming-drops--70--.current-split,
+.split-title-m25.current-split,
+.split-title-m25-90-.current-split,
+.split-title-m25--90--.current-split,
+.split-title-have-a-nice-day-.current-split,
+.split-title-have-a-nice-day--90-.current-split,
+.split-title-have-a-nice-day---90--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr13-m25.png"); }
+
+/* TR14 */
+.split-title-tr14.current-split,
+.split-title-tr14-87-.current-split,
+.split-title-tr14--87--.current-split,
+.split-title-menacing---.current-split,
+.split-title-menacing-----87-.current-split,
+.split-title-menacing------87--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr14.png"); }
+
+/* TR20 */
+.split-title-tr20.current-split,
+.split-title-tr20-95-.current-split,
+.split-title-tr20--95--.current-split,
+.split-title-one-way-digging-to-freedom.current-split,
+.split-title-one-way-digging-to-freedom-87-.current-split,
+.split-title-one-way-digging-to-freedom--87--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr20.png"); }
+
+/* TR21 */
+.split-title-tr21.current-split,
+.split-title-tr21-66-.current-split,
+.split-title-tr21--66--.current-split,
+.split-title-all-the-6-s---------.current-split,
+.split-title-all-the-6-s----------87-.current-split,
+.split-title-all-the-6-s-----------87--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr21.png"); }
+
+/* TR24 */
+.split-title-tr24.current-split,
+.split-title-tr24-93-.current-split,
+.split-title-tr24--93--.current-split,
+.split-title-tightrope-city.current-split,
+.split-title-tightrope-city-93-.current-split,
+.split-title-tightrope-city--93--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr24.png"); }
+
+/* TR25 */
+.split-title-tr25.current-split,
+.split-title-tr25-10-.current-split,
+.split-title-tr25--10--.current-split,
+.split-title-cascade.current-split,
+.split-title-cascade-10-.current-split,
+.split-title-cascade--10--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr25.png"); }
+
+/* TR27 */
+.split-title-tr27.current-split,
+.split-title-tr27-90-.current-split,
+.split-title-tr27--90--.current-split,
+.split-title-the-island-of-the-wicker-people.current-split,
+.split-title-the-island-of-the-wicker-people-90-.current-split,
+.split-title-the-island-of-the-wicker-people--90--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr27.png"); }
+
+/* TR28 */
+.split-title-tr28.current-split,
+.split-title-tr28-90-.current-split,
+.split-title-tr28--90--.current-split,
+.split-title-lost-something-.current-split,
+.split-title-lost-something--90-.current-split,
+.split-title-lost-something---90--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr28.png"); }
+
+/* TR29 */
+.split-title-tr29.current-split,
+.split-title-tr29-99-.current-split,
+.split-title-tr29--99--.current-split,
+.split-title-rainbow-island.current-split,
+.split-title-rainbow-island--99-.current-split,
+.split-title-rainbow-island---99--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr29.png"); }
