@@ -740,9 +740,9 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 .split-title-lemmingology.current-split,
 .split-title-lemmingology-80-.current-split,
 .split-title-lemmingology--80--.current-split,
-.split-title-tx8.current-split,
-.split-title-tx8-100-.current-split,
-.split-title-tx8--100--.current-split,
+.split-title-tx10.current-split,
+.split-title-tx10-100-.current-split,
+.split-title-tx10--100--.current-split,
 .split-title-izzie-wizzie-lemmings-get-busy.current-split,
 .split-title-izzie-wizzie-lemmings-get-busy-100-.current-split,
 .split-title-izzie-wizzie-lemmings-get-busy--100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr6-tx10.png"); }
@@ -982,9 +982,9 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 .split-title-walk-the-web-rope--88--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx20.png"); }
 
 /* TX21 */
-.split-title-tx20.current-split,
-.split-title-tx20-100-.current-split,
-.split-title-tx20--100--.current-split,
+.split-title-tx21.current-split,
+.split-title-tx21-100-.current-split,
+.split-title-tx21--100--.current-split,
 .split-title-feel-the-heat-.current-split,
 .split-title-feel-the-heat--100-.current-split,
 .split-title-feel-the-heat---100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx21.png"); }
