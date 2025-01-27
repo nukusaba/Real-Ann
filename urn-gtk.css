@@ -906,5 +906,119 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 .split-title-tr29-99-.current-split,
 .split-title-tr29--99--.current-split,
 .split-title-rainbow-island.current-split,
-.split-title-rainbow-island--99-.current-split,
-.split-title-rainbow-island---99--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr29.png"); }
+.split-title-rainbow-island-99-.current-split,
+.split-title-rainbow-island--99--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr29.png"); }
+
+/* TX2 */
+.split-title-tx2.current-split,
+.split-title-tx2-80-.current-split,
+.split-title-tx2--80--.current-split,
+.split-title-watch-out--there-s-traps-about.current-split,
+.split-title-watch-out--there-s-traps-about-80-.current-split,
+.split-title-watch-out--there-s-traps-about--80--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx2.png"); }
+
+/* TX4 */
+.split-title-tx4.current-split,
+.split-title-tx4-75-.current-split,
+.split-title-tx4--75--.current-split,
+.split-title-lend-a-helping-hand----.current-split,
+.split-title-lend-a-helping-hand-----75-.current-split,
+.split-title-lend-a-helping-hand------75--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx4.png"); }
+
+/* TX5 */
+.split-title-tx5.current-split,
+.split-title-tx5-75-.current-split,
+.split-title-tx5--75--.current-split,
+.split-title-the-prison-.current-split,
+.split-title-the-prison--75-.current-split,
+.split-title-the-prison---75--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx5.png"); }
+
+/* TX12 */
+.split-title-tx12.current-split,
+.split-title-tx12-80-.current-split,
+.split-title-tx12--80--.current-split,
+.split-title-livin--on-the-edge.current-split,
+.split-title-livin--on-the-edge-80-.current-split,
+.split-title-livin--on-the-edge--80--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx12.png"); }
+
+/* TX13 */
+.split-title-tx13.current-split,
+.split-title-tx13-99-.current-split,
+.split-title-tx13--99--.current-split,
+.split-title-upsidedown-world.current-split,
+.split-title-upsidedown-world-99-.current-split,
+.split-title-upsidedown-world--99--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx13.png"); }
+
+/* TX14 */
+.split-title-tx14.current-split,
+.split-title-tx14-95-.current-split,
+.split-title-tx14--95--.current-split,
+.split-title-hunt-the-nessy----.current-split,
+.split-title-hunt-the-nessy-----95-.current-split,
+.split-title-hunt-the-nessy------95--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx14.png"); }
+
+/* TX15 */
+.split-title-tx15.current-split,
+.split-title-tx15-80-.current-split,
+.split-title-tx15--80--.current-split,
+.split-title-what-an-awesome-level.current-split,
+.split-title-what-an-awesome-level-80-.current-split,
+.split-title-what-an-awesome-level--80--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx15.png"); }
+
+/* TX16 */
+.split-title-tx16.current-split,
+.split-title-tx16-97-.current-split,
+.split-title-tx16--97--.current-split,
+.split-title-mary-poppins--land.current-split,
+.split-title-mary-poppins--land-97-.current-split,
+.split-title-mary-poppins--land--97--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx16.png"); }
+
+/* TX20 */
+.split-title-tx20.current-split,
+.split-title-tx20-88-.current-split,
+.split-title-tx20--88--.current-split,
+.split-title-walk-the-web-rope.current-split,
+.split-title-walk-the-web-rope-88-.current-split,
+.split-title-walk-the-web-rope--88--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx20.png"); }
+
+/* TX21 */
+.split-title-tx20.current-split,
+.split-title-tx20-100-.current-split,
+.split-title-tx20--100--.current-split,
+.split-title-feel-the-heat-.current-split,
+.split-title-feel-the-heat--100-.current-split,
+.split-title-feel-the-heat---100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx21.png"); }
+
+/* TX24 */
+.split-title-tx24.current-split,
+.split-title-tx24-99-.current-split,
+.split-title-tx24--99--.current-split,
+.split-title-take-a-running-jump-----.current-split,
+.split-title-take-a-running-jump------99-.current-split,
+.split-title-take-a-running-jump-------99--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx24.png");}
+
+/* TX26 */
+.split-title-tx26.current-split,
+.split-title-tx26-99-.current-split,
+.split-title-tx26--99--.current-split,
+.split-title-triple-trouble.current-split,
+.split-title-triple-trouble-99-.current-split,
+.split-title-triple-trouble--99--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx26.png");}
+
+/* TX27 */
+.split-title-tx27.current-split,
+.split-title-tx27-60-.current-split,
+.split-title-tx27--60--.current-split,
+.split-title-call-in-the-bomb-squad.current-split,
+.split-title-call-in-the-bomb-squad-60-.current-split,
+.split-title-call-in-the-bomb-squad--60--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx27.png");}
+
+/* TX28 */
+.split-title-tx28.current-split,
+.split-title-tx28-70-.current-split,
+.split-title-tx28--70--.current-split,
+.split-title-poor-wee-creatures-.current-split,
+.split-title-poor-wee-creatures--70-.current-split,
+.split-title-poor-wee-creatures---70--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx28.png");}
+
+
