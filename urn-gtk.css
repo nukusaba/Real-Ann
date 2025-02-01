@@ -36,7 +36,7 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 
 .time.behind, .time.best-segment, time.best-split, .time.losing { color: @default-color; }
 
-.timer { font-size: 24pt; font-family: Noto Sans Mono; font-weight: 900; color: @ahead-bg; background-color: alpha(currentcolor,0.1); padding: 0px 10px 4px 30px; margin-bottom: 10px; margin-top: 9px; border-radius: 15px; transition: 0.7s background-color ease; border: 1px solid alpha(currentcolor,0.125); }
+.timer { font-size: 24pt; font-family: Noto Sans Mono; font-weight: 900; color: @ahead-bg; background-color: alpha(currentcolor,0.115); padding: 0px 10px 4px 30px; margin-bottom: 10px; margin-top: 9px; border-radius: 15px; transition: 0.7s background-color ease; border: 1px solid alpha(currentcolor,0.135); }
 
 .timer .timer-millis { font-size: 17pt; background-color: transparent; padding-bottom: 3px; color: alpha(@ahead-bg,0.7); }
 
@@ -86,17 +86,17 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 
 .window box.footer:nth-child(7) { background-color: transparent; }
 
-.prev-segment { color: @ahead-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+.prev-segment { color: @ahead-bg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; background-color: transparent; }
 
-.prev-segment.behind { color: @behind-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+.prev-segment.behind { color: @behind-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; background-color: transparent; }
 
-.prev-segment.losing { color: @losing-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+.prev-segment.losing { color: @losing-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; background-color: transparent; }
 
-.prev-segment.best-segment { color: @sob-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+.prev-segment.best-segment { color: @sob-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; background-color: transparent; }
 
-.sum-of-bests { color: @sob-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+.sum-of-bests { color: @sob-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; backgrond-color: transparent; }
 
-.personal-best { color: @ahead-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; }
+.personal-best { color: @ahead-fg; font-weight: 900; padding-left: 0px; padding-right: 0px; margin-top: 0px; margin-bottom: 0px; border-radius: 0px; transition: ease 0.3s background-color; max-width: 0px; min-width: 0px; background-color: transparent; }
 
 
 
@@ -105,7 +105,7 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 /* ██      ██    ██ ███████    ██    ██    ██ ██ ████ ██     ███████ ██████  ██      ██    ██     */
 /* ██      ██    ██      ██    ██    ██    ██ ██  ██  ██          ██ ██      ██      ██    ██     */
 /* ██████   ██████  ███████    ██     ██████  ██      ██     ███████ ██      ███████ ██    ██     */
-
+c
 /**********
  *  SM64  *
  *********/
@@ -662,9 +662,9 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 .split-title-worra-lorra-lemmings.current-split,
 .split-title-worra-lorra-lemmings-60-.current-split,
 .split-title-worra-lorra-lemmings--60--.current-split,
-.split-title-m5.current-split,
-.split-title-m5-99-.current-split,
-.split-title-m5--99--.current-split,
+.split-title-m9.current-split,
+.split-title-m9-99-.current-split,
+.split-title-m9--99--.current-split,
 .split-title-curse-of-the-pharaohs.current-split,
 .split-title-curse-of-the-pharaohs-99-.current-split,
 .split-title-curse-of-the-pharaohs--99--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/f29-m9.png"); }
@@ -811,8 +811,8 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 .split-title-lemmings-in-the-attic-84-.current-split,
 .split-title-lemmings-in-the-attic--84--.current-split,
 .split-title-m19.current-split,
-.split-title-m19-96-.current-split,
-.split-title-m19--96--.current-split,
+.split-title-m19-92-.current-split,
+.split-title-m19--92--.current-split,
 .split-title-time-to-get-up-.current-split,
 .split-title-time-to-get-up--92-.current-split,
 .split-title-time-to-get-up---92--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tr11-m19.png"); }
@@ -1019,6 +1019,142 @@ scrollbar* { background-color: transparent; border: none; color: transparent; ma
 .split-title-tx28--70--.current-split,
 .split-title-poor-wee-creatures-.current-split,
 .split-title-poor-wee-creatures--70-.current-split,
-.split-title-poor-wee-creatures---70--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx28.png");}
+.split-title-poor-wee-creatures---70--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/tx28.png"); }
 
+/* M1 */
+.split-title-m1.current-split,
+.split-title-m1-90-.current-split,
+.split-title-m1--90--.current-split,
+.split-title-steel-works.current-split,
+.split-title-steel-works-90-.current-split,
+.split-title-steel-works--90--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m1.png"); }
+
+/* M2 */
+.split-title-m2.current-split,
+.split-title-m2-90-.current-split,
+.split-title-m2--90--.current-split,
+.split-title-the-boiler-room.current-split,
+.split-title-the-boiler-room-90-.current-split,
+.split-title-the-boiler-room--90--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m2.png"); }
+
+/* M8 */
+.split-title-m8.current-split,
+.split-title-m8-90-.current-split,
+.split-title-m8--90--.current-split,
+.split-title-last-one-out-is-a-rotten-egg-.current-split,
+.split-title-last-one-out-is-a-rotten-egg--90-.current-split,
+.split-title-last-one-out-is-a-rotten-egg---90--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m8.png"); }
+
+/* M10 */
+.split-title-m10.current-split,
+.split-title-m10-66-.current-split,
+.split-title-m10--66--.current-split,
+.split-title-pillars-of-hercules.current-split,
+.split-title-pillars-of-hercules-66-.current-split,
+.split-title-pillars-of-hercules--66--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m10.png"); }
+
+/* M12 */
+.split-title-m12.current-split,
+.split-title-m12-100-.current-split,
+.split-title-m12--100--.current-split,
+.split-title-the-far-side.current-split,
+.split-title-the-far-side-100-.current-split,
+.split-title-the-far-side--100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m12.png"); }
+
+/* M14 */
+.split-title-m14.current-split,
+.split-title-m14-93-.current-split,
+.split-title-m14--93--.current-split,
+.split-title-pea-soup.current-split,
+.split-title-pea-soup-93-.current-split,
+.split-title-pea-soup--93--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m14.png"); }
+
+/* M16 */
+.split-title-m16.current-split,
+.split-title-m16-100-.current-split,
+.split-title-m16--100--.current-split,
+.split-title-just-a-minute---.current-split,
+.split-title-just-a-minute----100-.current-split,
+.split-title-just-a-minute-----100--.current-split,
+.split-title-m27.current-split,
+.split-title-m27-100-.current-split,
+.split-title-m27--100--.current-split,
+.split-title-just-a-minute--part-two-.current-split,
+.split-title-just-a-minute--part-two--100-.current-split,
+.split-title-just-a-minute--part-two---100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m16-m27.png"); }
+
+/* M17 */
+.split-title-m17.current-split,
+.split-title-m17-87-.current-split,
+.split-title-m17--87--.current-split,
+.split-title-stepping-stones.current-split,
+.split-title-stepping-stones-87-.current-split,
+.split-title-stepping-stones--87--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m17.png"); }
+
+/* M18 */
+.split-title-m18.current-split,
+.split-title-m18-90-.current-split,
+.split-title-m18--90--.current-split,
+.split-title-and-than-there-were-four----.current-split,
+.split-title-and-than-there-were-four-----90-.current-split,
+.split-title-and-than-there-were-four------90--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m18.png"); }
+
+/* M22 */
+.split-title-m22.current-split,
+.split-title-m22-85-.current-split,
+.split-title-m22--85--.current-split,
+.split-title-a-beastii-of-a-level.current-split,
+.split-title-a-beastii-of-a-level-85-.current-split,
+.split-title-a-beastii-of-a-level--85--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m22.png"); }
+
+/* M23 */
+.split-title-m23.current-split,
+.split-title-m23-80-.current-split,
+.split-title-m23--80--.current-split,
+.split-title-going-up-------.current-split,
+.split-title-going-up--------80-.current-split,
+.split-title-going-up---------80--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m23.png"); }
+
+/* M28 */
+.split-title-m28.current-split,
+.split-title-m28-100-.current-split,
+.split-title-m28--100--.current-split,
+.split-title-mind-the-step-----.current-split,
+.split-title-mind-the-step------100-.current-split,
+.split-title-mind-the-step-------100--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m28.png"); }
+
+/* M29 */
+.split-title-m29.current-split,
+.split-title-m29-80-.current-split,
+.split-title-m29--80--.current-split,
+.split-title-save-me.current-split,
+.split-title-save-me-80-.current-split,
+.split-title-save-me--80--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m29.png"); }
+
+/* M30 */
+.split-title-m30.current-split,
+.split-title-m30-75-.current-split,
+.split-title-m30--75--.current-split,
+.split-title-rendezvous-at-the-mountain.current-split,
+.split-title-rendezvous-at-the-mountain-75-.current-split,
+.split-title-rendezvous-at-the-mountain--75--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m30.png"); }
+
+
+/***********************************************************
+ *  SUPER MARIO PARTY JAMBOREE - Party-Planer Trek (any%)  *
+ **********************************************************/
+/* Gomba Lagoon */
+.split-title-goomba-lagoon.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/smpj/gl.png"); }
+
+/* Mega Wiggler's Tree Party */
+.split-title-mega-wiggler-s-tree-party.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/smpj/mwtp.png"); }
+
+/* Rainbow Galleria */
+.split-title-rainbow-galleria.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/smpj/rg.png"); }
+
+/* Roll 'em Raceway */
+.split-title-roll--em-raceway.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/smpj/rer.png"); }
+
+/* King Bowser's Keep */
+.split-title-king-bowser-s-keep.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/smpj/kbk.png"); }
 
