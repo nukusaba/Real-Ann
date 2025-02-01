@@ -15,7 +15,7 @@ A theme for the [Urn speedrun spliter](https://github.com/paoloose/urn) that use
 
 ## What is planed to be supported
 - Every Level in the game "Lemmings" with level names as split names.
-- Some one-off things for games i personaly enjoy running or watching.
+- Some one-off things for games i, or my friends, enjoy running or watching.
 
 ## What is not planed to be supported 
 - SM64 single star splits.
