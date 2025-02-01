@@ -11,10 +11,10 @@ A theme for the [Urn speedrun spliter](https://github.com/paoloose/urn) that use
 - Every SM64 Main category's WR route with star count in split name.
 - Some extra split names for SM64 for slightly diffrent routes.
 - Some alternative nameing in SM64 such as "Bowser 1" or "DW" for "BitDW".
-- Some for all Lemmings levels of the "Fun" rating, and their repeats.
+- All Lemmings levels for versions using the Amiga percentages.
+- Super Mario Party Jamboree - Party-Planer Trek (any%) (split names given by TotorRuns)
 
 ## What is planed to be supported
-- Every Level in the game "Lemmings" with level names as split names.
 - Some one-off things for games i, or my friends, enjoy running or watching.
 
 ## What is not planed to be supported 
