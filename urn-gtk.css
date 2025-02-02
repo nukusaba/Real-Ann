@@ -1140,9 +1140,9 @@ c
 .split-title-rendezvous-at-the-mountain--75--.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/lemmings/m30.png"); }
 
 
-/***********************************************************
- *  SUPER MARIO PARTY JAMBOREE - Party-Planer Trek (any%)  *
- **********************************************************/
+/***********************************************************   *************************
+ *  SUPER MARIO PARTY JAMBOREE - Party-Planer Trek (any%)  *   *  splits by TotorRuns  *
+ ***********************************************************   ************************/
 /* Gomba Lagoon */
 .split-title-goomba-lagoon.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/smpj/gl.png"); }
 
@@ -1158,3 +1158,17 @@ c
 /* King Bowser's Keep */
 .split-title-king-bowser-s-keep.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/smpj/kbk.png"); }
 
+/**************************************************   *************************
+ *  PHOENIX WRIGHT ACE ATTORNEY - original cases  *   *  splits by TotorRuns  *
+ **************************************************   ************************/
+/* The First Turnabout */
+.split-title-the-first-turnabout.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/pwaa/tft.png"); }
+
+/* Turnabout Sisters */
+.split-title-turnabout-sisters.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/pwaa/tsi.png"); }
+
+/* Turnabout Samurai */
+.split-title-turnabout-samurai.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/pwaa/tsa.png"); }
+
+/* Turnabout Goodbyes */
+.split-title-turnabout-goodbyes.current-split { background-image: url("https://gitlab.com/AsahiNyan/real-ann/-/raw/main/pwaa/tg.png"); }
