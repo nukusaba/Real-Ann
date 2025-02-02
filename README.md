@@ -23,7 +23,7 @@ A theme for the [Urn speedrun spliter](https://github.com/paoloose/urn) that use
 
 ## Behaviour if no image is included for the split name
 If the split name doesnt have a image assigned to it, it will default to a rounded grey background.
-
+ 
 ---
 # Installation
 1. Download the `urn-gtk.css` file and put it in Urn's root directory. (be sure to back up the old `urn-gtk.css` file)
