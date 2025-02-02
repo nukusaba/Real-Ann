@@ -34,6 +34,7 @@ make && sudo make install
 
 #### **Optional** 
 3. For the best experience i recommend installing the [awd-gtk3-dark theme](https://github.com/lassekongo83/adw-gtk3) and use the provided `.desktop` file to force Urn to use it.
+4. To make sure the `Real Ann` theme will display propperly use the provided `urn-gtk.gschema.xml` file. OR remove `live-split` in `<key name="theme" type="s">` as the default. Alternativly you can just remove the live-split file in the `themes` directory.
 
 ---
 
