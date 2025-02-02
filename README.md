@@ -13,6 +13,7 @@ A theme for the [Urn speedrun spliter](https://github.com/paoloose/urn) that use
 - Some alternative nameing in SM64 such as "Bowser 1" or "DW" for "BitDW".
 - All Lemmings levels for versions using the Amiga percentages.
 - Super Mario Party Jamboree - Party-Planer Trek (any%) (split names given by TotorRuns)
+- Phoenix Wright Ace Attorney - original cases (split names given by TotorRuns)
 
 ## What is planed to be supported
 - Some one-off things for games i, or my friends, enjoy running or watching.
