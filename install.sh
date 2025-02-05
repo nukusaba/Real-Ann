@@ -24,5 +24,4 @@ sudo -k cp -r real-ann /usr/local/share/urn/themes/
 echo "Install successful"
 gsettings set wildmouse.urn theme real-ann
 echo "Theme set"
-exit 0
 
