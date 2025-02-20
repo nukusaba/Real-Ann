@@ -44,4 +44,12 @@ chmod +x install.sh
 ./install.sh --uninstall
 ```
 
+# Want to contribute?
+If you want to contribute you can suggest new games to be added. The requirments for requesting a game are:
+- Game name (and a shortened version).
+- All images needed in accurate enough Aspect Ratio.
+- Split names and variants.
+- No 18+ games!
+
+You can also contribute by improving the CSS, like improving styling, or adding other peoples requests.
 
