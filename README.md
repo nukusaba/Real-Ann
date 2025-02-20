@@ -12,8 +12,8 @@ A theme for the [Urn speedrun spliter](https://github.com/paoloose/urn) that use
 - Some extra split names for SM64 for slightly diffrent routes.
 - Some alternative nameing in SM64 such as "Bowser 1" or "DW" for "BitDW".
 - All Lemmings levels for versions using the Amiga percentages.
-- Super Mario Party Jamboree - Party-Planer Trek (any%) (split names given by TotorRuns)
-- Phoenix Wright Ace Attorney - original cases (split names given by TotorRuns)
+- Super Mario Party Jamboree - Party-Planer Trek (any%) (split names and image sources given by TotorRuns)
+- Phoenix Wright Ace Attorney - original cases (split names and image sources given by TotorRuns)
 
 ### What is planed to be supported
 - Some one-off things for games i, or my friends, enjoy running or watching.
@@ -44,8 +44,4 @@ chmod +x install.sh
 ./install.sh --uninstall
 ```
 
----
-**Note:** This is a advanced theme you are **expected** to fix issues that arent related to the css code or images itself, yourself.
-
-Images are pulled as raw links from this Git repo over internet. Manual download of the images is not needed. This Also means that a internet connection is required for this theme to work, the reason this is done is because a local version of this theme would not be easy to achive due to the need for absolute links, and i do not want people putting a bunch of images in root, this aproach also makes maintaing images and updates easier.
 
