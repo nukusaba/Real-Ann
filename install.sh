@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-echo "This will require Sudo access, read the script before proceeding"
+echo "This will require Sudo access and will add lots of images to a root directory, read the script before proceeding"
 read -p "Proceed? [y/n] " confirmation
 if [[ "$confirmation" == [Yy] ]]; then
   echo "Continuing....."
@@ -20,8 +20,14 @@ if [ "$1" == "--uninstall" ]; then
   exit 0
 fi
 
-sudo -k cp -r real-ann /usr/local/share/urn/themes/
-echo "Install successful"
+echo "Installing....."
+sudo -k cp -r real-ann /usr/local/share/urn/themes/ && sudo mkdir /usr/local/share/urn/themes/real-ann/assets
+echo "Theme installed!"
+sleep 0.5
+echo "Installing Images....."
+sudo -k cp -r smpj sm64 pwaa lemmings /usr/local/share/urn/themes/real-ann/assets/
+echo "Install successful!"
+sleep 0.5
 gsettings set wildmouse.urn theme real-ann
-echo "Theme set"
+echo "Theme set!"
 
