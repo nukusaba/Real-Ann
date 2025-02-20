@@ -1,6 +1,6 @@
-/*****************************
- *  "Real Ann" by AsahiNyan  *
- ****************************/
+/****************************
+*  "Real Ann" by AsahiNyan  *
+****************************/
 
 @define-color default-background #0d0d0d;
 @define-color alt-background #191919;
@@ -36,7 +36,7 @@ scrollbar* { background-color: transparent; border: none; color: transparent; }
 
 .time.behind, .time.best-segment, time.best-split, .time.losing { color: @default-color; }
 
-.timer { font-size: 24pt; font-family: Noto Sans Mono; font-weight: 900; color: @ahead-bg; background-color: alpha(currentcolor,0.115); padding: 0px 10px 4px 30px; margin-bottom: 10px; margin-top: 9px; border-radius: 15px; transition: 0.7s background-color ease; border: 1px solid alpha(currentcolor,0.135); }
+.timer { font-size: 24pt; font-family: Noto Sans Mono; font-weight: 900; color: @ahead-bg; background-color: alpha(currentcolor,0.115); padding: 0px 10px 4px 30px; margin-bottom: 10px; margin-top: 9px; border-radius: 15px; transition: 0.7s background-color ease; }
 
 .timer .timer-millis { font-size: 17pt; background-color: transparent; padding-bottom: 3px; color: alpha(@ahead-bg,0.7); }
 
@@ -78,11 +78,11 @@ scrollbar* { background-color: transparent; border: none; color: transparent; }
 
 .best-segment, .current-split .delta.best-segment { color: @sob-bg; background-color: alpha(@default-background,0.4); padding-left: 10px; padding-right: 10px; margin-top: 3px; margin-bottom: 3px; border-radius: 50px; transition: ease 0.3s background-color; min-width: 60px; }
 /* PS */
-.window box.footer:nth-child(4) { border-top-left-radius: 15px; border-top-right-radius: 15px; border: 1px solid alpha(@default-text,0.2); border-bottom: none; padding: 10px 10px 5px 10px; background-color: @alt-background; border-bottom: 1px solid alpha(@default-text,0.05); }
+.window box.footer:nth-child(4) { border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom: none; padding: 10px 10px 5px 10px; background-color: @alt-background; }
 /* SOB */
-.window box.footer:nth-child(5) { border-radius: 0px; border-left: 1px solid alpha(@default-text,0.2); border-right: 1px solid alpha(@default-text,0.2); padding: 5px 10px 5px 10px; background-color: @alt-background; border-bottom: 1px solid alpha(@default-text,0.05); }
+.window box.footer:nth-child(5) { border-radius: 0px; padding: 5px 10px 5px 10px; background-color: @alt-background; }
 /* PB */
-.window box.footer:nth-child(6) { border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border: 1px solid alpha(@default-text,0.2); border-top: none; padding: 5px 10px 10px 10px; background-color: @alt-background; }
+.window box.footer:nth-child(6) { border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; padding: 5px 10px 10px 10px; background-color: @alt-background; }
 
 .window box.footer:nth-child(7) { background-color: transparent; }
 
@@ -105,10 +105,10 @@ scrollbar* { background-color: transparent; border: none; color: transparent; }
 /* ██      ██    ██ ███████    ██    ██    ██ ██ ████ ██     ███████ ██████  ██      ██    ██     */
 /* ██      ██    ██      ██    ██    ██    ██ ██  ██  ██          ██ ██      ██      ██    ██     */
 /* ██████   ██████  ███████    ██     ██████  ██      ██     ███████ ██      ███████ ██    ██     */
-c
-/**********
- *  SM64  *
- *********/
+
+/*********
+*  SM64  *
+*********/
 /* WF */
 .split-title-wf.current-split,
 .split-title-wf--9-.current-split,
@@ -269,9 +269,9 @@ c
 .split-title-mips--15-.current-split { background-image: url("assets/sm64/mips.png"); }
 
 
-/**************
- *  LEMMINGS  *
- *************/
+/*************
+*  LEMMINGS  *
+*************/
 /* F1 / TR15 */
 .split-title-f1.current-split,
 .split-title-f1-10-.current-split,
@@ -1140,9 +1140,9 @@ c
 .split-title-rendezvous-at-the-mountain--75--.current-split { background-image: url("assets/lemmings/m30.png"); }
 
 
-/***********************************************************   *************************
- *  SUPER MARIO PARTY JAMBOREE - Party-Planer Trek (any%)  *   *  splits by TotorRuns  *
- ***********************************************************   ************************/
+/**********************************************************   *************************
+*  SUPER MARIO PARTY JAMBOREE - Party-Planer Trek (any%)  *   *  splits by TotorRuns  *
+***********************************************************   ************************/
 /* Gomba Lagoon */
 .split-title-goomba-lagoon.current-split { background-image: url("assets/smpj/gl.png"); }
 
@@ -1159,9 +1159,9 @@ c
 .split-title-king-bowser-s-keep.current-split { background-image: url("assets/smpj/kbk.png"); }
 
 
-/**************************************************   *************************
- *  PHOENIX WRIGHT ACE ATTORNEY - original cases  *   *  splits by TotorRuns  *
- **************************************************   ************************/
+/*************************************************   *************************
+*  PHOENIX WRIGHT ACE ATTORNEY - original cases  *   *  splits by TotorRuns  *
+**************************************************   ************************/
 /* The First Turnabout */
 .split-title-the-first-turnabout.current-split { background-image: url("assets/pwaa/tft.png"); }
 
