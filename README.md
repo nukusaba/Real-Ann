@@ -54,3 +54,8 @@ The requirments for requesting a game are:
 
 You can also contribute by improving the CSS, like improving styling, or adding other peoples requests.
 
+---
+
+## Note
+This theme is built on a blank `urn-gtk.css`, if it doesnt look correct, please remove all code from `urn-gtk.css` in the urn sourcecode directory, and recompile.
+
