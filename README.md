@@ -45,7 +45,8 @@ chmod +x install.sh
 ```
 
 # Want to contribute?
-If you want to contribute you can suggest new games to be added. The requirments for requesting a game are:
+If you want to contribute you can suggest new games to be added. Requests in `Issues` please.
+The requirments for requesting a game are:
 - Game name (and a shortened version).
 - All images needed in accurate enough Aspect Ratio.
 - Split names and variants.
