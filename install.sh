@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-echo "This will require Sudo access and will add lots of images to a root directory, read the script before proceeding"
+echo "This will require root access, and will add lots of images to a directory owned by the root user, read the script before proceeding"
 read -p "Proceed? [y/n] " confirmation
 if [[ "$confirmation" == [Yy] ]]; then
   echo "Continuing....."
