@@ -26,6 +26,7 @@ If the split name doesnt have a image assigned to it, it will default to a round
  
 ---
 ## Installation
+For a GUI installation you can use [urn-settings](https://github.com/mellowawa/urn-settings)
 - **Clone repo**
 ```
 git clone https://github.com/AsahiNyan/Real-Ann
