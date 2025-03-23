@@ -26,24 +26,8 @@ If the split name doesnt have a image assigned to it, it will default to a round
  
 ---
 ## Installation
-For a GUI installation you can use [urn-settings](https://github.com/mellowawa/urn-settings)
-- **Clone repo**
-```
-git clone https://github.com/AsahiNyan/Real-Ann
-cd Real-Ann
-```
-
-- **Install**
-```
-chmod +x install.sh
-./install.sh
-```
-
----
-## Uninstall
-```
-./install.sh --uninstall
-```
+Use [urn-settings](https://github.com/mellowawa/urn-settings).
+Install script is no longer supported for easier maintinence.
 
 # Want to contribute?
 If you want to contribute you can suggest new games to be added. Requests in `Issues` please.
