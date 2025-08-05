@@ -26,8 +26,17 @@ If the split name doesnt have a image assigned to it, it will default to a round
  
 ---
 ## Installation
-Use [urn-settings](https://github.com/mellowawa/urn-settings).
-Install script is no longer supported for easier maintinence.
+- **Clone Repo**
+```
+git clone https://github.com/nukusaba/Real-Ann.git
+cd Real-Ann
+```
+- **Install** (This requires Sudo. Only execute if you understand what the script does.)
+```
+./install.sh
+```
+
+---
 
 # Want to contribute?
 If you want to contribute you can suggest new games to be added. Requests in `Issues` please.
