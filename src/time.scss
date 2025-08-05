@@ -1,0 +1,50 @@
+@use "colors.scss" as c;
+
+.time, .split-time { color: c.$timeFg; }
+
+// delta times
+.delta { color: c.$aheadFg; } // ahead
+.losing { color: c.$aheadLosingFg; }
+.behind { color: c.$behindFg; }
+.behind.losing { color: c.$losingFg; }
+.best-segment { color: c.$sobFg; }
+
+
+// timer
+.timer
+{
+      font-size: 18pt;
+      background-color: rgba(c.$aheadFg, 0.3);
+      color: c.$windowFg;
+      padding: 10px;
+      padding-right: 14px;
+      border-radius: 20px 20px 0 0;
+      border-top: 4px solid rgba(c.$windowFg, 0.15);
+      border-bottom: 1px solid rgba(c.$windowFg, 0.15);
+
+      &.delay
+      {
+            color: c.$windowFg;
+            background-color: rgba(c.$windowFg, 0.1);
+      }
+      &.losing
+      {
+            color: c.$windowFg;
+            background-color: rgba(c.$aheadLosingFg,0.3);
+      }
+      &.behind
+      {
+            color: c.$windowFg;
+            background-color: rgba(c.$behindFg,0.3);
+      }
+      &.behind.losing
+      {
+            color: c.$windowFg;
+            background-color: rgba(c.$losingFg,0.3);
+      }
+      &.done
+      {
+            color: c.$windowFg;
+            background-color: rgba(c.$doneFg,0.3);
+      }
+}

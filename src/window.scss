@@ -1,0 +1,50 @@
+@use "colors.scss" as c;
+
+.header, .window
+{
+      background-color: c.$windowBg;
+      color: c.$windowFg;
+}
+.title
+{
+      color: c.$windowFg;
+      font-size: 16pt;
+      padding: 2px;
+}
+.attempt-count
+{
+      color: rgba(c.$windowFg, 0.6);
+      font-size: 9pt;
+      margin-top: 5px;
+}
+
+.window box.footer
+{
+      background-color: rgba(c.$windowFg, 0.1);
+      padding: 2.5px;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      &:nth-child(4) // Previous Segment
+      {
+            padding-top: 5px;
+      }
+      &:nth-child(5) // Sum Of Best
+      {
+            border-radius: 0;
+      }
+      &:nth-child(6) // Personal Best
+      {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid rgba(c.$windowFg,0.1);
+      }
+
+      &:nth-child(7) // WR box. DISABLED/UNSUPPORTED
+      {
+            background: none;
+            padding: 0;
+            color: transparent;
+      }
+}

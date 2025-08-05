@@ -1,0 +1,33 @@
+//    window
+         $windowBg:    #24222d                 ;
+            $altBg:    #2a2835                 ;
+      $lastSplitBg:    rgba(#ffffff, 0.07)     ;
+         $windowFg:    #ffffff                 ;
+        $attemptFg:    rgba($windowFg, 0.6)       ;
+           $border:    rgba($windowFg, 0.2)       ;
+          $iBorder:    #d9a9be                 ;
+           $timeFg:    #dadada                 ;
+
+//    colors
+          $aheadFg:    #39e82d                 ;
+    $aheadLosingFg:    #bedc54                 ;
+         $behindFg:    #ff6811                 ;
+         $losingFg:    #ff3737                 ;
+            $sobFg:    #f6d949                 ;
+           $doneFg:    #2b7afa                 ;
+             $wrFg:    #d4ecff                 ;
+
+// set default font
+   * { font-family:    Noto Sans                 ;}
+
+
+// default text shawdow for splits (required for images)
+.current-split
+{
+      text-shadow:
+            1px 1px 0 #000,
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000
+      ;
+}
