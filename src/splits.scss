@@ -1,15 +1,30 @@
 @use "colors.scss" as c;
 @use "sass:string";
+@use "sass:color";
 
-.splits { background-color: c.$windowBg; }
+.window box:nth-child(2):not(.split) // .splits
+{
+      background-color: c.$windowBg;
+      padding: 5px;
+      margin-right: -3px;
+      margin-left: -3px;
+}
 
 .split
 {
-      border-top: 2px solid transparent;
-      padding: 5px;
-      font-size: 10pt;
+      padding: 0px 10px 0px 10px;
+      margin: 2px 0px 2px 0px;
       border-radius: 10px;
-      transition: all 200ms ease;
+      min-height: 20px;
+      background-color: transparent;
+      transition: 0.5s all ease, font-size 15ms;
+      margin-left: 13px;
+      margin-right: 10px;
+
+      &:nth-child(even):not(.current-split)
+      {
+            background-color: rgba(c.$lastSplitBg, 0.02);
+      }
 }
 .current-split
 {
@@ -17,17 +32,16 @@
       margin-right: 2px;
       background-color: rgba(c.$windowFg, 0.2);
       color: c.$windowFg;
-      font-weight: 900;
       transition:
-            all 75ms cubic-bezier(0, 0, 0.2, 1),
+            all 200ms cubic-bezier(0, 0, 0.2, 1),
             background-size 0ms,
             background-image 0ms,
             border 0ms,
             font-size 15ms
       ;
       background-size: 100%;
-      min-height: 30px;
-      font-size: 13pt;
+      min-height: 25px;
+      font-size: 12pt;
       padding: 1px;
       padding-right: 10px;
       padding-left: 10px;
@@ -43,12 +57,18 @@
       padding-right: 6px;
 }
 
-.split-last
+.split-last .split
 {
-      background-color: c.$windowBg;
-      color: string.unquote("alpha(#{c.$timeFg}, 0.4)");
-      padding: 0;
-      font-size: 8pt;
-      border-radius: 999px;
-      & .time { color: string.unquote("alpha(#{c.$timeFg}, 0.4)"); }
+      margin-bottom: 5px;
+      &:not(.current-split)
+      {
+            color: string.unquote("alpha(#{c.$timeFg}, 0.4)");
+            padding: 5px;
+            font-size: 8pt;
+            border-radius: 0;
+            border-top: 1px solid color.mix(c.$lastSplitBg, c.$windowFg, 95%);
+            font-size: 9pt;
+            & .split-time { color: string.unquote("alpha(#{c.$timeFg}, 0.4)"); }
+      }
 }
+
