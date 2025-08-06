@@ -1,10 +1,19 @@
 @use "colors.scss" as c;
 
-.header, .window
+.window
 {
       background-color: c.$windowBg;
       color: c.$windowFg;
 }
+.header
+{
+      background-color: c.$windowBg;
+      color: c.$windowFg;
+      border-bottom: 1px solid c.$border;
+      padding-bottom: 3px;
+      margin-bottom: 1px;
+}
+
 .title
 {
       color: c.$windowFg;
