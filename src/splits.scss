@@ -5,7 +5,6 @@
 .window box:nth-child(2):not(.split) // .splits
 {
       background-color: c.$windowBg;
-      padding: 5px;
       margin-right: -3px;
       margin-left: -3px;
 }
@@ -15,7 +14,7 @@
       padding: 0px 10px 0px 10px;
       margin: 2px 0px 2px 0px;
       border-radius: 10px;
-      min-height: 20px;
+      min-height: 25px;
       background-color: transparent;
       transition: 0.5s all ease, font-size 15ms;
       margin-left: 13px;
@@ -28,7 +27,7 @@
 }
 .current-split
 {
-      margin-left: 2px;
+      margin-left: 6px;
       margin-right: 2px;
       background-color: rgba(c.$windowFg, 0.2);
       color: c.$windowFg;
@@ -40,11 +39,11 @@
             font-size 15ms
       ;
       background-size: 100%;
-      min-height: 25px;
-      font-size: 12pt;
+      min-height: 30px;
+      font-size: 13pt;
       padding: 1px;
       padding-right: 10px;
-      padding-left: 10px;
+      padding-left: 12px;
       font-weight: 900;
       border-color: rgba(c.$windowFg, 0.2);
 }
