@@ -12,7 +12,7 @@
 .split
 {
       padding: 0px 10px 0px 10px;
-      margin: 2px 0px 2px 0px;
+      margin: 2px;
       border-radius: 10px;
       min-height: 25px;
       background-color: transparent;
@@ -46,6 +46,7 @@
       padding-left: 12px;
       font-weight: 900;
       border-color: rgba(c.$windowFg, 0.2);
+      box-shadow: 0 0 0 2px c.$iBorder;
 }
 
 .split-icon
